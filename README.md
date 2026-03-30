@@ -67,25 +67,23 @@ Additional analyses:
 ## Project Structure
 
 ```
-├── README.md
-├── project_report.md              # Full project report with embedded figures
-├── census-bureau.data         # Data file 
-├── census-bureau.columns          # Column names
-└── deliverables/
-    ├── code/
-    │   ├── classification.py      # Part 1: Income classification (RF, LR, XGBoost)
-    │   ├── segmentation.py        # Part 2: Customer segmentation (K-Means + PCA)
-    │   └── supplementary_analysis.py  # Part 3: ROC/AUC, education, workforce sub-segments
-    └── plots/
-        ├── rf_feature_importance.png
-        ├── xgb_confusion_matrix.png
-        ├── roc_curves.png
-        ├── education_vs_income.png
-        ├── pca_explained_variance.png
-        ├── cluster_selection.png
-        ├── segment_sizes.png
-        ├── segment_comparison.png
-        ├── segments_2d.png
-        ├── workforce_segments.png
-        └── workforce_segments_2d.png
+deliverables/
+├── README.md                          # This file
+├── project_report.md                  # Project report with embedded figures
+├── code/
+│   ├── classification.py              # Part 1: Income classification (RF, LR, XGBoost)
+│   ├── segmentation.py                # Part 2: Customer segmentation (K-Means + PCA)
+│   └── supplementary_analysis.py      # ROC/AUC, education analysis, workforce sub-segments
+└── plots/
+    ├── rf_feature_importance.png      # Top 10 feature importances (Random Forest)
+    ├── xgb_confusion_matrix.png       # Confusion matrix heatmap (XGBoost)
+    ├── roc_curves.png                 # ROC curves for all 3 classifiers
+    ├── education_vs_income.png        # Income % by education level
+    ├── pca_explained_variance.png     # Cumulative PCA variance
+    ├── cluster_selection.png          # Elbow and Silhouette analysis
+    ├── segment_sizes.png              # Segment size pie chart
+    ├── segment_comparison.png         # Segment comparison dashboard
+    ├── segments_2d.png                # 2D PCA scatter of segments
+    ├── workforce_segments.png         # Workforce sub-segmentation dashboard
+    └── workforce_segments_2d.png      # Workforce segments 2D scatter
 ```
