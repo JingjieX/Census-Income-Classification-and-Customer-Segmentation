@@ -1,6 +1,6 @@
 # Project Report: Census Income Classification and Customer Segmentation
 
-**Author:** Jingjie Xu | **Prepared for:** Retail Business Client | **Date:** March 2026
+**Author:** Jingjie Xu | **Prepared for:** Retail Business Client | **Date:** March 30, 2026
 
 
 ---
